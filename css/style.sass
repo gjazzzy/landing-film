@@ -26,7 +26,6 @@ body
   list-style: none
 
 // Main
-
 .info-film
   color: #fff
 
@@ -127,11 +126,11 @@ body
   overflow: hidden
 
 .slider__item
-  margin-right: 28px
+  margin-right: 35px
 
 .slick-prev // Конкретные кнопки назад
   position: absolute
-  right: 15%
+  left: 0%
   top: 50%
   margin: -30px 0px 0px 0px // Убирает от половины высоты!
   z-index: 10 // Кнопки поверх картинок
@@ -148,7 +147,7 @@ body
 
 .slick-next // Конкретные кнопки вперед
   position: absolute
-  right: 12%
+  left: 15%
   top: 50%
   margin: -30px 0px 0px 0px // Убирает от половины высоты!
   z-index: 10 // Кнопки поверх картинок
@@ -163,7 +162,7 @@ body
     opacity: 0.5
 
 .button-nav
-  top: 80%
+  top: 68%
 
 // footer
 .footer
@@ -194,3 +193,13 @@ body
 
 .link-footer__item:hover
   color: #a3a3a3
+
+@media screen and (max-width: 1200px)
+  .button-nav
+    display: none
+
+@media screen and (max-width: 992px)
+  .play-button
+    display: none
+  .slider__item
+    margin-right: 200px
